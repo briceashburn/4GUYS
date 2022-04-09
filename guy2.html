@@ -23,12 +23,26 @@
 		<a style="text-align:center;">
 
 		<h1> <font color="brown"> <br> Welcome Brice </h1>
-		<h2> Input the date you would like to update </h2>
-	<form>
-  		<label for="date">DATE: </label> <br>
-  		<input type="text" id="date" name="date"> 
-  		<input type="submit" value="Submit"> </font> <br> <br>
-	</form>
+		<h2> Input the date and your workout for that day. </h2>
+
+		<input type="text" id="dateWorkout">
+
+		<button onclick="displayInput1()" > Submit </button> <br> <br>
+		<h5 id="message">    </h3>
+
+		<script>
+			function displayInput1()
+			{
+				let dateWorkout = document.querySelector("#dateWorkout");
+				let message = document.querySelector("#message");
+
+				message.innerHTML = dateWorkout.value;
+
+			}
+
+
+		</script>
+	
 
 		<a style="text-decoration:none" href = "index.html" > Home Page </a>
 
